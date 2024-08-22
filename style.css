@@ -1,0 +1,130 @@
+/* Define global variables for colors, fonts, and spacing */
+* {
+  /* Define a dark slate color */
+  --color-slate-900: hsl(218, 44%, 22%);
+  /* Define a medium slate color */
+  --color-slate-500: hsl(216, 15%, 48%);
+  /* Define a light slate color */
+  --color-slate-300: hsl(212, 45%, 89%);
+  /* Define a white color */
+  --color-white: hsl(0, 0%, 100%);
+  /* Define font family and properties for font 1 */
+  --font-1-family: "Outfit";
+  --font-1-weight: 700;
+  --font-1-size: 22px;
+  --font-1-line-height: 120%;
+  --font-1-letter-spacing: 0px;
+  /* Define font family and properties for font 2 */
+  --font-2-family: "Outfit";
+  --font-2-weight: 400;
+  --font-2-size: 15px;
+  --font-2-line-height: 140%;
+  --font-2-letter-spacing: 0.2px;
+  /* Define spacing variables */
+  --spacing-500: 40px;
+  --spacing-300: 24px;
+  --spacing-200: 16px;
+  /* Define card width and border radius */
+  --card-width: 320px;
+  --card-border-radius: 20px;
+  /* Calculate card image border radius based on card border radius */
+  --card-image-border-radius: calc(var(--card-border-radius) / 2);
+  /* Define max width for card contents */
+  --card-contents-max-width: 256px;
+  /* Define box shadow for card */
+  --card-box-shadow: 0px 25px 25px 0px rgba(0, 0, 0, 4.77%);
+}
+
+/* Style the body element */
+body {
+  /* Remove margin */
+  margin: 0;
+  /* Set background color to light slate */
+  background-color: var(--color-slate-300);
+  /* Set font size, family, weight, line height, and color */
+  font-size: var(--font-2-size);
+  font-family: var(--font-2-family);
+  font-weight: var(--font-2-weight);
+  line-height: var(--font-2-line-height);
+  color: var(--color-slate-500);
+  /* Set letter spacing */
+  letter-spacing: var(--font-2-letter-spacing);
+}
+
+/* Style the card element */
+.card {
+  /* Display as a flex container */
+  display: flex;
+  /* Set flex direction to column */
+  flex-direction: column;
+  /* Center align items */
+  align-items: center;
+  /* Set position to absolute */
+  position: absolute;
+  /* Set top and left to 50% and translate to center */
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  /* Set width to card width */
+  width: var(--card-width);
+  /* Set padding */
+  padding: var(--spacing-200) var(--spacing-200) var(--spacing-500) var(--spacing-200);
+  /* Set background color to white */
+  background-color: var(--color-white);
+  /* Set border radius */
+  border-radius: var(--card-border-radius);
+  /* Set box shadow */
+  box-shadow: var(--card-box-shadow);
+}
+
+/* Style the card image element */
+.card__image {
+  /* Set width to 100% */
+  width: 100%;
+  /* Set border radius to half of card border radius */
+  border-radius: var(--card-image-border-radius);
+}
+
+/* Style the card title element */
+.card__title {
+  /* Set max width to card contents max width */
+  max-width: var(--card-contents-max-width);
+  /* Remove margin */
+  margin: 0;
+  /* Set font size, family, weight, line height, and color */
+  font-size: var(--font-1-size);
+  font-family: var(--font-1-family);
+  font-weight: var(--font-1-weight);
+  line-height: var(--font-1-line-height);
+  color: var(--color-slate-900);
+  /* Set text alignment to center */
+  text-align: center;
+  /* Set letter spacing */
+  letter-spacing: var(--font-1-letter-spacing);
+}
+
+/* Style the card contents element */
+.card__contents {
+  /* Display as a flex container */
+  display: flex;
+  /* Set flex direction to column */
+  flex-direction: column;
+  /* Center align items */
+  align-items: center;
+  /* Set margin top to spacing 300 */
+  margin-top: var(--spacing-300);
+  /* Set margin bottom to 0 */
+  margin-bottom: 0;
+}
+
+/* Style the card text element */
+.card__text {
+  /* Set max width to card contents max width */
+  max-width: var(--card-contents-max-width);
+  /* Remove margin */
+  margin: 0;
+  /* Set the margin top to spacing 200 */
+  margin-top: var(--spacing-200);
+  /* Set text alignment to center */
+  text-align: center;
+}
