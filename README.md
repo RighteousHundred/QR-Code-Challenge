@@ -16,10 +16,10 @@ This is a solution to the [QR code component challenge on Frontend Mentor](https
 
 ![](./screenshot.png)
 
-<!-- ### Links
+### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com) -->
+- Solution URL: [https://www.frontendmentor.io/solutions/qr-code-component-DzLFM_p71g](https://www.frontendmentor.io/solutions/qr-code-component-DzLFM_p71g)
+- Live Site URL: [https://qr-code-challenge-omega.vercel.app/](https://qr-code-challenge-omega.vercel.app/)
 
 ## My process
 
